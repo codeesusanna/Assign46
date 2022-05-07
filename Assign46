@@ -1,0 +1,18 @@
+n=0
+t=1000
+l=[]
+d={}
+for i in range(n,t+1):
+    l.append(i)
+j=1
+for j in l:
+    while(i<=((j//2)+1)):
+        if i**2==j:
+            d[j]='yes'
+        else:
+            d[j]='no'
+
+        i+=1
+    i=1
+
+print(d)
